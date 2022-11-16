@@ -39,7 +39,7 @@ Resources:
     Properties: 
       Runtime: nodejs18.x
       Code:
-        ZipFile: !Sub |
+        ZipFile: |
           import { aws_ec2 as ec2 } from 'aws-cdk-lib';
           import nodemailer from "nodemailer";
           //
@@ -69,7 +69,7 @@ Resources:
       Runtime: nodejs12.x
       Handler: index.handler
       Code:
-        ZipFile: !Sub |
+        ZipFile: |
           var AWS = require('aws-sdk');
           var util = require('util');
           var s3 = new AWS.S3();
